@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XSS-Demo</title>
+</head>
+<body>
+  <h1>Hinterlasse einen Kommentar</h1>
+  <form action="/submit" method="post">
+    <label>
+      Kommentar-Text:
+      <textarea name="comment-text" rows="4" cols="50" required></textarea>
+    </label>
+    <br>
+    <button type="submit">Abschicken</button>
+  </form>
+  <h2>Kommentare:</h2>
+  <ul class="comment-list">
+    
+  </ul>
+</body>
+</html>

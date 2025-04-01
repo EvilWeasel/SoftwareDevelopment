@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cerberus-pass", "cerberus-pass\cerberus-pass.csproj", "{6FCCB099-1152-4B8D-BFE3-D528D68470F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "maui-default-template", "maui-default-template\maui-default-template.csproj", "{F87DF82D-AAB9-472A-9901-6E358C2AF273}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "maui-simple", "maui-simple\maui-simple.csproj", "{C85C7991-F14B-4BF6-A713-5C91C74C7EE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "maui-mvvm", "maui-mvvm\maui-mvvm.csproj", "{26F6584B-C27A-4B28-B68E-54574F85D349}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "password-manager-toolkit", "password-manager-toolkit\password-manager-toolkit.csproj", "{11DCF24B-668A-4D86-8520-4CB147EA5FE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "maui-cerberus-pass", "maui-cerberus-pass\maui-cerberus-pass.csproj", "{2CD33A4D-D16F-4A92-846A-0275511A03A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "maui-propertychanged", "maui-propertychanged\maui-propertychanged.csproj", "{9AE7CFA9-AEBC-41BB-832C-C311894FEF5A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6FCCB099-1152-4B8D-BFE3-D528D68470F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FCCB099-1152-4B8D-BFE3-D528D68470F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FCCB099-1152-4B8D-BFE3-D528D68470F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FCCB099-1152-4B8D-BFE3-D528D68470F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F87DF82D-AAB9-472A-9901-6E358C2AF273}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F87DF82D-AAB9-472A-9901-6E358C2AF273}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F87DF82D-AAB9-472A-9901-6E358C2AF273}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F87DF82D-AAB9-472A-9901-6E358C2AF273}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C85C7991-F14B-4BF6-A713-5C91C74C7EE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C85C7991-F14B-4BF6-A713-5C91C74C7EE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C85C7991-F14B-4BF6-A713-5C91C74C7EE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C85C7991-F14B-4BF6-A713-5C91C74C7EE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26F6584B-C27A-4B28-B68E-54574F85D349}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26F6584B-C27A-4B28-B68E-54574F85D349}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26F6584B-C27A-4B28-B68E-54574F85D349}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26F6584B-C27A-4B28-B68E-54574F85D349}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11DCF24B-668A-4D86-8520-4CB147EA5FE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11DCF24B-668A-4D86-8520-4CB147EA5FE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11DCF24B-668A-4D86-8520-4CB147EA5FE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11DCF24B-668A-4D86-8520-4CB147EA5FE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CD33A4D-D16F-4A92-846A-0275511A03A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CD33A4D-D16F-4A92-846A-0275511A03A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CD33A4D-D16F-4A92-846A-0275511A03A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CD33A4D-D16F-4A92-846A-0275511A03A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AE7CFA9-AEBC-41BB-832C-C311894FEF5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AE7CFA9-AEBC-41BB-832C-C311894FEF5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AE7CFA9-AEBC-41BB-832C-C311894FEF5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AE7CFA9-AEBC-41BB-832C-C311894FEF5A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

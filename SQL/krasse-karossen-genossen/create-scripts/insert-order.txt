@@ -1,0 +1,7 @@
+Insert Order:
+
+1. Addresses
+2. Customers
+3. Employees
+4. Invoices
+5. Cars
