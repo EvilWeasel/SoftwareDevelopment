@@ -1,0 +1,18 @@
+{
+    "personen": [
+        {
+            "vorname": "Paul",
+            "nachname": "Fridolin",
+            "urlaub": 20,
+            "krank": [],
+            "funktion": "Trainer"
+        },
+        {
+            "vorname": "Thomas",
+            "nachname": "Gerster",
+            "urlaub": 10,
+            "krank": [],
+            "funktion": "Manager"
+        }
+    ]
+}

@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-CSS-JavaScript Unterricht</title>
+</head>
+<body>
+    <header>
+        <h1>Willkommen zum HTML-CSS-JavaScript Unterricht</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#einführung">Einführung</a></li>
+            <li><a href="#grundlagen">Grundlagen</a></li>
+            <li><a href="#weiterführendes">Weiterführendes</a></li>
+            <li><a href="#fazit">Fazit</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="einführung">
+            <h2>Einführung</h2>
+            <p>HTML (HyperText Markup Language) ist die Standard-Auszeichnungssprache für Dokumente, die im Web angezeigt werden sollen.</p>
+            <h1>Was machen wir im HTML-CSS-JavaScript Unterricht</h1>
+            <p>Das ist ein Paragraf, wir werden ihn benutzen um den Inhalt unserer HTML-Seiten zu erklären und um Definitionen zu erstellen.
+                Als erstes werden wir uns die Themen anschauen über die wir sprechen werden und eine Art Verzeichnis bauen, mit dem wir später
+                zu den verschiedenen Themen-Blöcken navigieren können. Im Anschluss werden wir die verschiedenen Grundkomponenten und Bausteine
+                in HTML selber testen und zu jedem eine Definition schreiben. Wenn wir das vollbracht haben, werden wir mit CSS beginnen. Wir
+                werden uns ein Theme basteln, das wir auf unsere Seite anwenden können. Zudem werden wir Positionierung, Hover, Shadow und
+                Animationseffekte erstellen. Nach unserem Ausflug in CSS werden wir mit JavaScript beginnen. Das bedeutet, wir werden uns anschauen 
+                was JavaScript ist, wie es sich von typsicheren Sprachen unterscheidet, wo es zum Einsatz kommt und zum Schluss wie wir es benutzen.
+                Das bedeutet, wir werden unsere zuvor erstellte Seite dynamisch aufbauen und mit JavaScript verbessern.</p>
+        </section>
+
+        <section id="grundlagen">
+            <h2>Grundlagen</h2>
+            <article>
+                <h3>HTML-Struktur</h3>
+                <p>Ein HTML-Dokument besteht aus mehreren Tags, die den Inhalt strukturieren. Die Grundstruktur sieht wie folgt aus:</p>
+                <pre>
+                    <code>
+                        &lt;!DOCTYPE html&gt;
+                        &lt;html&gt;
+                        &lt;head&gt;
+                            &lt;title&gt;Titel&lt;/title&gt;
+                        &lt;/head&gt;
+                        &lt;body&gt;
+                            Inhalt
+                        &lt;/body&gt;
+                        &lt;/html&gt;
+                    </code>
+                </pre>
+            </article>
+
+            <article>
+                <h3>Wichtige Tags</h3>
+                <ul>
+                    <li>&lt;!-- ... --&gt; - Kommentar</li>
+                    <li>&lt;a&gt; - Link
+                        <a href="https://www.example.com">Dies ist ein Link</a>
+                    </li>
+                    <li>&lt;abbr&gt; - Abkürzung
+                        <abbr title="HyperText Markup Language">HTML</abbr>
+                    </li>
+                    <li>&lt;address&gt; - Adresse
+                        <address>Musterstraße 1, 12345 Musterstadt</address>
+                    </li>
+                    <li>&lt;area&gt; - Bereich in einer Image-Map
+                        <img src="example.jpg" usemap="#example-map" alt="Beispielbild">
+                        <map name="example-map">
+                            <area shape="rect" coords="34,44,270,350" alt="Beispiel" href="https://www.example.com">
+                        </map>
+                    </li>
+                    <li>&lt;article&gt; - Artikel
+                        <article>
+                            <h2>Artikelüberschrift</h2>
+                            <p>Dies ist ein Beispielartikel.</p>
+                        </article>
+                    </li>
+                    <li>&lt;aside&gt; - Randnotiz
+                        <aside>Dies ist eine Randnotiz.</aside>
+                    </li>
+                    <li>&lt;audio&gt; - Audioinhalt
+                        <audio controls>
+                            <source src="audiofile.mp3" type="audio/mp3">
+                            Ihr Browser unterstützt das Audio-Element nicht.
+                        </audio>
+                    </li>
+                    <li>&lt;b&gt; - Fettdruck
+                        <b>Dies ist fetter Text</b>
+                    </li>
+                    <li>&lt;base&gt; - Basis-URL</li>
+                    <li>&lt;bdi&gt; - Bidirektionaler Isolationstext
+                        <bdi>Dieser Text wird isoliert dargestellt.</bdi>
+                    </li>
+                    <li>&lt;bdo&gt; - Bidirektionale Textüberschreibung
+                        <bdo dir="rtl">Dieser Text wird von rechts nach links dargestellt.</bdo>
+                    </li>
+                    <li>&lt;blockquote&gt; - Blockzitat
+                        <blockquote>Dies ist ein Zitat.</blockquote>
+                    </li>
+                    <li>&lt;body&gt; - Körper
+                        <body>Dies ist der Hauptinhalt des Dokuments.</body>
+                    </li>
+                    <li>&lt;br&gt; - Zeilenumbruch
+                        Dies ist ein Zeilenumbruch<br>und dieser Text ist in der nächsten Zeile.
+                    </li>
+                    <li>&lt;button&gt; - Schaltfläche
+                        <button>Klick mich</button>
+                    </li>
+                    <li>&lt;canvas&gt; - Zeichenfläche
+                        <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+                    </li>
+                    <li>&lt;caption&gt; - Tabellenüberschrift
+                        <table>
+                            <caption>Tabellenüberschrift</caption>
+                            <tr><td>Zelle</td></tr>
+                        </table>
+                    </li>
+                    <li>&lt;cite&gt; - Zitat
+                        <cite>Dies ist ein Zitat.</cite>
+                    </li>
+                    <li>&lt;code&gt; - Code
+                        <code>console.log('Hello World');</code>
+                    </li>
+                    <li>&lt;col&gt; - Spalte
+                        <table>
+                            <col style="background-color:lightgrey">
+                            <tr><td>Spalte 1</td><td>Spalte 2</td></tr>
+                        </table>
+                    </li>
+                    <li>&lt;colgroup&gt; - Spaltengruppe
+                        <table>
+                            <colgroup>
+                                <col style="background-color:lightgrey">
+                            </colgroup>
+                            <tr><td>Spalte 1</td><td>Spalte 2</td></tr>
+                        </table>
+                    </li>
+                    <li>&lt;data&gt; - Verweiswert
+                        <data value="42">Antwort auf alles</data>
+                    </li>
+                    <li>&lt;datalist&gt; - Auswahlliste
+                        <input list="browsers">
+                        <datalist id="browsers">
+                            <option value="Chrome">
+                            <option value="Firefox">
+                            <option value="Safari">
+                            <option value="Edge">
+                        </datalist>
+                    </li>
+                    <li>&lt;dd&gt; - Definitionsbeschreibung
+                        <dl>
+                            <dt>HTML</dt>
+                            <dd>HyperText Markup Language</dd>
+                        </dl>
+                    </li>
+                    <li>&lt;del&gt; - Gelöschter Text
+                        <del>Dieser Text wurde gelöscht.</del>
+                    </li>
+                    <li>&lt;details&gt; - Details
+                        <details>
+                            <summary>Mehr Informationen</summary>
+                            <p>Hier sind die zusätzlichen Informationen.</p>
+                        </details>
+                    </li>
+                    <li>&lt;dfn&gt; - Definiertes Element
+                        <dfn>HTML</dfn> ist die Abkürzung für HyperText Markup Language.
+                    </li>
+                    <li>&lt;dialog&gt; - Dialog
+                        <dialog open>Dies ist ein Dialogfenster.</dialog>
+                    </li>
+                    <li>&lt;div&gt; - Abschnitt
+                        <div>Dies ist ein div-Element.</div>
+                    </li>
+                    <li>&lt;dl&gt; - Definitionsliste
+                        <dl>
+                            <dt>HTML</dt>
+                            <dd>HyperText Markup Language</dd>
+                            <dt>CSS</dt>
+                            <dd>Cascading Style Sheets</dd>
+                        </dl>
+                    </li>
+                    <li>&lt;dt&gt; - Definitionsbegriff
+                        <dl>
+                            <dt>HTML</dt>
+                            <dd>HyperText Markup Language</dd>
+                        </dl>
+                    </li>
+                    <li>&lt;em&gt; - Betonung
+                        <em>Dies ist betonter Text.</em>
+                    </li>
+                    <li>&lt;embed&gt; - Eingebetteter Inhalt
+                        <embed src="example.pdf" width="500" height="375">
+                    </li>
+                    <li>&lt;fieldset&gt; - Formularfeldgruppe
+                        <fieldset>
+                            <legend>Persönliche Informationen</legend>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name">
+                        </fieldset>
+                    </li>
+                    <li>&lt;figcaption&gt; - Bildunterschrift
+                        <figure>
+                            <img src="example.jpg" alt="Beispielbild">
+                            <figcaption>Dies ist eine Bildunterschrift.</figcaption>
+                        </figure>
+                    </li>
+                    <li>&lt;figure&gt; - Abbildung
+                        <figure>
+                            <img src="example.jpg" alt="Beispielbild">
+                            <figcaption>Dies ist eine Bildunterschrift.</figcaption>
+                        </figure>
+                    </li>
+                    <li>&lt;footer&gt; - Fußzeile
+                        <footer>Dies ist die Fußzeile des Dokuments.</footer>
+                    </li>
+                    <li>&lt;form&gt; - Formular
+                        <form action="/submit" method="post">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name"><br><br>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email"><br><br>
+                            <input type="submit" value="Absenden">
+                        </form>
+                    </li>
+                    <li>&lt;h1&gt; bis &lt;h6&gt; - Überschriften
+                        <h1>Überschrift 1</h1>
+                        <h2>Überschrift 2</h2>
+                        <h3>Überschrift 3</h3>
+                        <h4>Überschrift 4</h4>
+                        <h5>Überschrift 5</h5>
+                        <h6>Überschrift 6</h6>
+                    </li>
+                    <li>&lt;head&gt; - Kopf</li>
+                    <li>&lt;header&gt; - Kopfzeile
+                        <header>Dies ist die Kopfzeile des Dokuments.</header>
+                    </li>
+                    <li>&lt;hr&gt; - Horizontale Linie
+                        <hr>
+                    </li>
+                    <li>&lt;html&gt; - HTML-Dokument
+                        <html lang="de">
+                            <head>
+                                <title>Titel des Dokuments</title>
+                            </head>
+                            <body>
+                                Dies ist der Hauptinhalt des Dokuments.
+                            </body>
+                        </html>
+                    </li>
+                    <li>&lt;i&gt; - Kursiv
+                        <i>Dies ist kursiver Text.</i>
+                    </li>
+                    <li>&lt;iframe&gt; - Inline-Frame
+                        <iframe src="https://www.example.com" width="300" height="200"></iframe>
+                    </li>
+                    <li>&lt;img&gt; - Bild
+                        <img src="picture.jpg" alt="Beispielbild">
+                    </li>
+                    <li>&lt;input&gt; - Eingabefeld
+                        <input type="text" id="name" name="name">
+                    </li>
+                    <li>&lt;ins&gt; - Eingefügter Text
+                        <ins>Dieser Text wurde hinzugefügt.</ins>
+                    </li>
+                    <li>&lt;kbd&gt; - Tastatureingabe
+                        <kbd>Ctrl</kbd> + <kbd>C</kbd> kopiert den Text.
+                    </li>
+                    <li>&lt;label&gt; - Beschriftung
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name">
+                    </li>
+                    <li>&lt;legend&gt; - Legende
+                        <fieldset>
+                            <legend>Persönliche Informationen</legend>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name">
+                        </fieldset>
+                    </li>
+                    <li>&lt;li&gt; - Listenelement
+                        <ul>
+                            <li>Element 1</li>
+                            <li>Element 2</li>
+                            <li>Element 3</li>
+                        </ul>
+                    </li>
+                    <li>&lt;link&gt; - Verweis
+                        <link rel="stylesheet" href="styles.css">
+                    </li>
+                    <li>&lt;main&gt; - Hauptinhalt
+                        <main>Dies ist der Hauptinhalt des Dokuments.</main>
+                    </li>
+                    <li>&lt;map&gt; - Image-Map
+                        <img src="example.jpg" usemap="#example-map" alt="Beispielbild">
+                        <map name="example-map">
+                            <area shape="rect" coords="34,44,270,350" alt="Beispiel" href="https://www.example.com">
+                        </map>
+                    </li>
+                    <li>&lt;mark&gt; - Markierter Text
+                        <mark>Dies ist markierter Text.</mark>
+                    </li>
+                    <li>&lt;meta&gt; - Metadaten
+                        <meta charset="UTF-8">
+                    </li>
+                    <li>&lt;meter&gt; - Messwert
+                        <meter value="2" min="0" max="10">2 von 10</meter>
+                    </li>
+                    <li>&lt;nav&gt; - Navigation
+                        <nav>
+                            <ul>
+                                <li><a href="#einführung">Einführung</a></li>
+                                <li><a href="#grundlagen">Grundlagen</a></li>
+                                <li><a href="#weiterführendes">Weiterführendes</a></li>
+                                <li><a href="#fazit">Fazit</a></li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li>&lt;noscript&gt; - Kein Skript
+                        <noscript>Ihr Browser unterstützt kein JavaScript.</noscript>
+                    </li>
+                    <li>&lt;object&gt; - Eingebettetes Objekt
+                        <object data="example.pdf" type="application/pdf" width="600" height="400"></object>
+                    </li>
+                    <li>&lt;ol&gt; - Geordnete Liste
+                        <ol>
+                            <li>Element 1</li>
+                            <li>Element 2</li>
+                            <li>Element 3</li>
+                        </ol>
+                    </li>
+                    <li>&lt;optgroup&gt; - Optionsgruppe
+                        <select>
+                            <optgroup label="Früchte">
+                                <option value="apfel">Apfel</option>
+                                <option value="banane">Banane</option>
+                            </optgroup>
+                            <optgroup label="Gemüse">
+                                <option value="karotte">Karotte</option>
+                                <option value="tomate">Tomate</option>
+                            </optgroup>
+                        </select>
+                    </li>
+                    <li>&lt;option&gt; - Option
+                        <select>
+                            <option value="apfel">Apfel</option>
+                            <option value="banane">Banane</option>
+                            <option value="karotte">Karotte</option>
+                        </select>
+                    </li>
+                    <li>&lt;output&gt; - Ausgabe
+                        <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+                            <input type="range" id="a" value="50"> +
+                            <input type="number" id="b" value="50"> =
+                            <output name="result" for="a b">100</output>
+                        </form>
+                    </li>
+                    <li>&lt;p&gt; - Absatz
+                        <p>Dies ist ein Absatz.</p>
+                    </li>
+                    <li>&lt;param&gt; - Parameter
+                        <object data="movie.swf" type="application/x-shockwave-flash">
+                            <param name="autoplay" value="true">
+                        </object>
+                    </li>
+                    <li>&lt;picture&gt; - Bildcontainer
+                        <picture>
+                            <source media="(min-width: 650px)" srcset="large.jpg">
+                            <source media="(min-width: 465px)" srcset="medium.jpg">
+                            <img src="small.jpg" alt="Beispielbild">
+                        </picture>
+                    </li>
+                    <li>&lt;pre&gt; - Vorformatierter Text
+                        <pre>
+Vorformatierter Text
+bleibt wie
+eingegeben.
+                        </pre>
+                    </li>
+                    <li>&lt;progress&gt; - Fortschritt
+                        <progress value="70" max="100">70%</progress>
+                    </li>
+                    <li>&lt;q&gt; - Kurzes Zitat
+                        <q>Dies ist ein kurzes Zitat.</q>
+                    </li>
+                    <li>&lt;rp&gt; - Ruby-Fallback
+                        <ruby>
+                            漢字 <rp>(</rp><rt>Kanji</rt><rp>)</rp>
+                        </ruby>
+                    </li>
+                    <li>&lt;rt&gt; - Ruby-Text
+                        <ruby>
+                            漢字 <rt>Kanji</rt>
+                        </ruby>
+                    </li>
+                    <li>&lt;ruby&gt; - Ruby-Anmerkung
+                        <ruby>
+                            漢字 <rt>Kanji</rt>
+                        </ruby>
+                    </li>
+                    <li>&lt;s&gt; - Durchgestrichener Text
+                        <s>Dieser Text ist durchgestrichen.</s>
+                    </li>
+                    <li>&lt;samp&gt; - Mustertext
+                        <samp>Beispielausgabe</samp>
+                    </li>
+                    <li>&lt;script&gt; - Skript
+                        <script>
+                            console.log('Hello World');
+                        </script>
+                    </li>
+                    <li>&lt;section&gt; - Abschnitt
+                        <section>
+                            <h2>Abschnittsüberschrift</h2>
+                            <p>Dies ist ein Abschnitt.</p>
+                        </section>
+                    </li>
+                    <li>&lt;select&gt; - Auswahlliste
+                        <select>
+                            <option value="apfel">Apfel</option>
+                            <option value="banane">Banane</option>
+                            <option value="karotte">Karotte</option>
+                        </select>
+                    </li>
+                    <li>&lt;small&gt; - Kleiner Text
+                        <small>Dies ist kleiner Text.</small>
+                    </li>
+                    <li>&lt;source&gt; - Medienquelle
+                        <video controls>
+                            <source src="movie.mp4" type="video/mp4">
+                            Ihr Browser unterstützt das Video-Tag nicht.
+                        </video>
+                    </li>
+                    <li>&lt;span&gt; - Inline-Bereich
+                        <span>Dies ist ein Span-Element.</span>
+                    </li>
+                    <li>&lt;strong&gt; - Wichtiger Text
+                        <strong>Dies ist wichtiger Text.</strong>
+                    </li>
+                    <li>&lt;style&gt; - Stildefinition
+                        <style>
+                            body {
+                                font-family: Arial, sans-serif;
+                            }
+                        </style>
+                    </li>
+                    <li>&lt;sub&gt; - Tiefgestellter Text
+                        H<sub>2</sub>O
+                    </li>
+                    <li>&lt;summary&gt; - Zusammenfassung
+                        <details>
+                            <summary>Mehr Informationen</summary>
+                            <p>Hier sind die zusätzlichen Informationen.</p>
+                        </details>
+                    </li>
+                    <li>&lt;sup&gt; - Hochgestellter Text
+                        E = mc<sup>2</sup>
+                    </li>
+                    <li>&lt;table&gt; - Tabelle
+                        <table>
+                            <tr><th>Überschrift</th></tr>
+                            <tr><td>Zelle</td></tr>
+                        </table>
+                    </li>
+                    <li>&lt;tbody&gt; - Tabellenkörper
+                        <table>
+                            <tbody>
+                                <tr><td>Zelle</td></tr>
+                            </tbody>
+                        </table>
+                    </li>
+                    <li>&lt;td&gt; - Tabellenzelle
+                        <table>
+                            <tr><td>Zelle</td></tr>
+                        </table>
+                    </li>
+                    <li>&lt;template&gt; - Vorlagenelement
+                        <template id="my-template">
+                            <p>Dies ist eine Vorlage.</p>
+                        </template>
+                    </li>
+                    <li>&lt;textarea&gt; - Textbereich
+                        <textarea>Dies ist ein Textbereich.</textarea>
+                    </li>
+                    <li>&lt;tfoot&gt; - Tabellenfuß
+                        <table>
+                            <tfoot>
+                                <tr><td>Fußzeile</td></tr>
+                            </tfoot>
+                        </table>
+                    </li>
+                    <li>&lt;th&gt; - Tabellenüberschrift
+                        <table>
+                            <tr><th>Überschrift</th></tr>
+                        </table>
+                    </li>
+                    <li>&lt;thead&gt; - Tabellenkopf
+                        <table>
+                            <thead>
+                                <tr><th>Überschrift</th></tr>
+                            </thead>
+                        </table>
+                    </li>
+                    <li>&lt;time&gt; - Zeit
+                        <time datetime="2024-07-08">8. Juli 2024</time>
+                    </li>
+                    <li>&lt;title&gt; - Titel</li>
+                    <li>&lt;tr&gt; - Tabellenzeile
+                        <table>
+                            <tr><td>Zelle</td></tr>
+                        </table>
+                    </li>
+                    <li>&lt;track&gt; - Textspur
+                        <video controls>
+                            <source src="movie.mp4" type="video/mp4">
+                            <track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="Englisch">
+                            Ihr Browser unterstützt das Video-Tag nicht.
+                        </video>
+                    </li>
+                    <li>&lt;u&gt; - Unterstrichen
+                        <u>Dieser Text ist unterstrichen.</u>
+                    </li>
+                    <li>&lt;ul&gt; - Ungeordnete Liste
+                        <ul>
+                            <li>Element 1</li>
+                            <li>Element 2</li>
+                            <li>Element 3</li>
+                        </ul>
+                    </li>
+                    <li>&lt;var&gt; - Variable
+                        <var>x</var> = 10
+                    </li>
+                    <li>&lt;video&gt; - Video
+                        <video controls>
+                            <source src="movie.mp4" type="video/mp4">
+                            Ihr Browser unterstützt das Video-Tag nicht.
+                        </video>
+                    </li>
+                    <li>&lt;wbr&gt; - Zeilenumbruchsmöglichkeit
+                        Dies ist ein sehr langer Text<wbr>mit einem Zeilenumbruch.
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="weiterführendes">
+            <h2>Weiterführendes</h2>
+            <article>
+                <h3>Formulare</h3>
+                <p>Formulare werden verwendet, um Benutzerdaten zu sammeln. Ein einfaches Formular sieht so aus:</p>
+                <form action="/submit" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name"><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br><br>
+                    <input type="submit" value="Absenden">
+                </form>
+            </article>
+
+            <article>
+                <h3>Medien</h3>
+                <p>HTML unterstützt die Einbindung verschiedener Medientypen:</p>
+                <p>Bilder:</p>
+                <img src="beispielbild.jpg" alt="Beispielbild">
+                <p>Videos:</p>
+                <video controls>
+                    <source src="beispielvideo.mp4" type="video/mp4">
+                    Ihr Browser unterstützt das Video-Tag nicht.
+                </video>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 HTML-CSS-JavaScript Unterricht</p>
+    </footer>
+</body>
+</html>

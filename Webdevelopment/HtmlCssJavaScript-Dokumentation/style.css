@@ -1,0 +1,51 @@
+/* Definieren von CSS-Variablen im :root-Selektor */
+:root {
+    --textColor: #d4d4d4; /* Haupttextfarbe */
+    --textColor2: #aacde8; /* Sekundäre Textfarbe */
+    --backgroundColor: #0e0027; /* Hintergrundfarbe */
+    --backgroundColor2: #202020;
+    --backgroundColor3: #3d3d3d;
+    --effectColor: #00b3ff; /* Effektfarbe für Akzente */
+
+    --fontfamilie: Arial, sans-serif; /* Schriftfamilie */
+}
+
+/* Allgemeine Stile für das body-Element */
+body {
+    background-color: var(--backgroundColor); /* Setzt die Hintergrundfarbe */
+    color: var(--textColor); /* Setzt die Haupttextfarbe */
+    font-family: var(--fontfamilie); /* Setzt die Schriftfamilie */
+    padding: 0; /* Entfernt den Standard-Abstand */
+}
+
+
+article{
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 0 10px var(--effectColor);
+    background-color: var(--backgroundColor2);
+    
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: var(--textColor);
+}
+
+article h1,article h2,article h3,article h4,article h5,article h6{
+    color: var(--textColor2);
+    text-shadow: 0 0 5px var(--effectColor);
+}
+code{
+    color: var(--effectColor);
+}
+
+pre{
+    width: 80vw; /* Breite des Frames */
+    overflow-x: scroll;
+    background-color: var(--backgroundColor3);
+    border: solid 1px;
+    padding: 10px;
+}
+
+

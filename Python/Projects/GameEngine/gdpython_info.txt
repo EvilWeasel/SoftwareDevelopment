@@ -1,0 +1,4 @@
+https://pypi.org/project/gdpython/
+https://github.com/Michael0992/GDPython
+
+Das Projekt selber ist hier im gdpython unterordner
